@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="../static/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Streak Honey">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Streak's professional website">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <title>Streak Honey</title>
+</head>
+<body onload=" addYear()">
+    <header>
+        <h1 id="webname">Streak Honey</h1>
+        <nav id="myTopnav" class="topnav">
+            <a href="index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="fun.html" class="active">For Fun</a>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars" onclick="activeNav()" ></i>
+                </a>
+        </nav>
+    </header>
+    <div class="mainFun">
+        <div id="item1">
+            <h2>Things I love to do for fun</h2>
+            <!-- <button id="SeeMoreBTN" onclick="showList()">Click to see...</button> -->
+            <ul id="FavList">
+                <li>Snowboarding</li>
+                <li>Traveling</li>
+                <li>Spending time with friends</li>
+                <li>Watching and playing basketball</li>
+                <li>Working out</li>
+            </ul>
+        </div>
+        <div id="item2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KUEcunIBK-w?si=77hHGfL2PdIl21fg" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture;" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id="item3">
+            <h3>My favorite places</h3>
+           <!--The div element for the map -->
+           <div id="map"></div>
+
+        </div>
+        <div id="item4">
+            <img id="funIMG" src = "../static/IMG20240121094238.jpeg" alt = "Snowboarding Photo">
+        </div>
+    </div>
+    <footer>
+        <p id="copyYear">Streak Honey &copy</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="../static/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Streak Honey">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Streak's professional website">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Streak Honey</title>
+</head>
+<body onload=" addYear()">
+    <header>
+        <h1 id="webname">Streak Honey</h1>
+        <nav  id="myTopnav" class="topnav">
+            <a href="index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html" class="active">Contact Me</a>
+            <a href="fun.html">For Fun</a>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars" onclick="activeNav()" ></i>
+                </a>
+        </nav>
+    </header>
+    <div class="main">
+        <h2>Contact Me</h2>
+        <form action = "">
+            <label for="userName"> Your Name (required):</label>
+            <input type="text" id="userName" required/>
+            <label for="userEmail"> Your Email (required):</label>
+            <input type="email" id="userEmail" required/>
+            <label for="userComment"> Your Comment or Question:</label>
+            <textarea id="userComment" cols="30" rows="10" required></textarea>
+            <br>
+            <input id = "send" type="submit" value="send" onclick="validate()"/>
+        </form>
+        <p id="ValidateMsg"></p>
+        <br>
+        <table>
+            <tr><th>Contact Method</th><th>Description</th></tr>
+            <tr><td>Email</td><td>ahoney@andrew.cmu.edu</td></tr>
+            <tr><td>Phone</td><td>(626)-319-9257</td></tr>
+            <tr><td>LinkedIn</td><td>linkedin.com/in/streak-honey-2192a4234</td></tr>
+        </table>
+
+    </div>
+    <footer>
+        <p id="copyYear">Streak Honey &copy</p>
+    </footer>
+</body>
+</html>
